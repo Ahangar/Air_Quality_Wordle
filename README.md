@@ -1,4 +1,6 @@
 <p align="center">
+  ![alt text](https://github.com/ahangar/Air_Quality_Wordle/coverImage.JPG?raw=true)
+
 ![coverImage](https://user-images.githubusercontent.com/28548377/171597756-31443e46-1ad8-4e8e-bacb-1758033b2f1c.JPG)
 </p>
 ## Air_Quality_Wordle
