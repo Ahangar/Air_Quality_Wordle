@@ -1,0 +1,132 @@
+@use '../util' as *;
+
+.container {
+	padding: 0; 
+	max-width: rem(1110);
+	margin: 0 auto;
+	position: absolute;
+	margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+
+	@include breakpoint(large) {
+		padding: 0;
+		transform: translate(0, 0);
+	}
+}
+//remove padding feature-----------------------------------------
+.remove-all-margin-padding{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+//modal features-----------------------------------
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+}
+
+.modal-content {
+    position: absolute;
+	margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 0.9;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+//buttons for -----------------------------------------
+.trigger{
+
+	width: 60px;
+	height: 30;
+}
+.trigger:hover {
+	background-color: lightgray;
+  }
+.copyClipboard{
+
+	width: 60px;
+	height: 30;
+}
+.copyClipboard:hover {
+	background-color: lightgray;
+  }
+
+//navbar----------------------
+
+.navbar {
+	position: relative;
+	background: white;
+}
+
+#navlist {
+   list-style: none;
+   display: flex;
+   padding: 0;
+   margin: 0;
+   background: white;
+}
+
+#navlist li {
+  flex: auto;
+  text-align: center;
+  padding: 1.6em;
+  font-size: 18px;
+  color: black;
+}
+
+//footer
+#footerList {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	background: white;
+ }
+#footerList li {
+	flex: auto;
+	text-align: left;
+	padding:0;
+	font-size: 14px;
+	color: white;
+  }
+
+
+#footerList li a{
+	color: lightgray;
+}

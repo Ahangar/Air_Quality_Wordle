@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Air Quality Wordle</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@100&family=Shizuru&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/dist/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+		<script defer type="module" src="/dist/script.js"></script>
+
+
+		
+	</head>
+	<body>
+
+		<nav class="navbar">
+
+			<ul id="navlist">
+				<li> </li>
+				<li><a class="trigger" title="How do I play?"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+				<li><h4>Air Quality</h4>
+					<h1>Wordle <br> </h1>
+				</li>
+				<li> <a class="copyClipboard" title="Share"><i class="fa fa-share"></i></a></li>
+				<li></li>
+			</ul>
+	
+		</nav>
+
+		
+		
+		
+		
+		<section class="game">
+			<div id="guess1" class="guess" data-letters="">
+				<div class="guess__tile" id="guess1Tile1"></div>
+				<div class="guess__tile" id="guess1Tile2"></div>
+				<div class="guess__tile" id="guess1Tile3"></div>
+				<div class="guess__tile" id="guess1Tile4"></div>
+				<div class="guess__tile" id="guess1Tile5"></div>
+			</div>
+
+			<div id="guess2" class="guess" data-letters="">
+				<div class="guess__tile" id="guess2Tile1"></div>
+				<div class="guess__tile" id="guess2Tile2"></div>
+				<div class="guess__tile" id="guess2Tile3"></div>
+				<div class="guess__tile" id="guess2Tile4"></div>
+				<div class="guess__tile" id="guess2Tile5"></div>
+			</div>
+
+			<div id="guess3" class="guess" data-letters="">
+				<div class="guess__tile" id="guess3Tile1"></div>
+				<div class="guess__tile" id="guess3Tile2"></div>
+				<div class="guess__tile" id="guess3Tile3"></div>
+				<div class="guess__tile" id="guess3Tile4"></div>
+				<div class="guess__tile" id="guess3Tile5"></div>
+			</div>
+
+			<div id="guess4" class="guess" data-letters="">
+				<div class="guess__tile" id="guess4Tile1"></div>
+				<div class="guess__tile" id="guess4Tile2"></div>
+				<div class="guess__tile" id="guess4Tile3"></div>
+				<div class="guess__tile" id="guess4Tile4"></div>
+				<div class="guess__tile" id="guess4Tile5"></div>
+			</div>
+
+			<div id="guess5" class="guess" data-letters="">
+				<div class="guess__tile" id="guess5Tile1"></div>
+				<div class="guess__tile" id="guess5Tile2"></div>
+				<div class="guess__tile" id="guess5Tile3"></div>
+				<div class="guess__tile" id="guess5Tile4"></div>
+				<div class="guess__tile" id="guess5Tile5"></div>
+			</div>
+
+			<div id="guess6" class="guess" data-letters="">
+				<div class="guess__tile" id="guess6Tile1"></div>
+				<div class="guess__tile" id="guess6Tile2"></div>
+				<div class="guess__tile" id="guess6Tile3"></div>
+				<div class="guess__tile" id="guess6Tile4"></div>
+				<div class="guess__tile" id="guess6Tile5"></div>
+			</div>
+		</section>
+
+
+		<div class="container">
+			
+
+			<div class="modal">
+    		<div class="modal-content">
+				
+        		<span class="close-button">&times;</span>
+        		<h4>HOW TO PLAY</h4>
+				<p>Guess the <strong>WORDLE</strong> in six tries.</p>
+				<p>Each guess must be a valid five-letter word. Hit the enter button to submit.</p>
+				<p>After each guess, the color of the tiles will change to show how close your guess was to the word.</p>
+				<h5>The wordle is realated to an air quality concept <br></h5>
+
+				<div class="examples">
+					<p><strong><br>Examples</strong></p>
+
+						<div id="guess1" class="guess" data-letters="">
+							<div class="guess__tile correct" id="guess1Tile1">W</div>
+							<div class="guess__tile" id="guess1Tile2">e</div>
+							<div class="guess__tile" id="guess1Tile3">a</div>
+							<div class="guess__tile" id="guess1Tile4">r</div>
+							<div class="guess__tile" id="guess1Tile5">y</div>
+						</div>
+						<p>The letter <strong>W</strong> is in the word and in the correct spot.</p>
+
+						<div id="guess1" class="guess" data-letters="">
+							<div class="guess__tile " id="guess1Tile1">p</div>
+							<div class="guess__tile present" id="guess1Tile2">i</div>
+							<div class="guess__tile" id="guess1Tile3">l</div>
+							<div class="guess__tile" id="guess1Tile4">l</div>
+							<div class="guess__tile" id="guess1Tile5">s</div>
+						</div>
+						<p>The letter <strong>I</strong> is in the word and in the correct spot.</p>
+
+						<div id="guess1" class="guess" data-letters="">
+							<div class="guess__tile " id="guess1Tile1">v</div>
+							<div class="guess__tile" id="guess1Tile2">a</div>
+							<div class="guess__tile" id="guess1Tile3">g</div>
+							<div class="guess__tile absent" id="guess1Tile4">u</div>
+							<div class="guess__tile" id="guess1Tile5">e</div>
+						</div>
+					  <p>The letter <strong>U</strong> is not in the word in any spot.</p>
+					</div>
+				  </div>
+
+    		</div>
+			</div>
+		</div>
+
+
+
+		<nav class="navbar">
+
+			<ul id="footerList">
+				<li><a href="https://ahangar.github.io/" target="_blank"><p><strong>About me</strong></p></a></li>
+				
+			</ul>
+	
+		</nav>
+	</body>
+</html>

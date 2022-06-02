@@ -1,0 +1,50 @@
+@use '../util' as *;
+
+.guess{
+
+    display: grid;
+    /*border: hsl(0, 0%, 100%);*/
+    grid-template-columns: repeat(5,1fr);
+    gap: rem(3);
+    width: rem(300);
+    margin-bottom: rem(8);
+
+    &__tile{
+        border: rem(2) solid #d3d6da;
+        width: rem(52);
+        height: rem(52);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: rem(32);
+        font-weight: 600;
+
+    }
+
+    .has-letter{
+        border-color: hsl(0, 0%,40%);
+    }
+    .correct{
+        background-color: #6aaa64;
+        border-color:#6aaa64;
+        color: white;
+    }
+
+    .present{
+        background-color: #c9b458;
+        border-color: #c9b458 ;
+        color: white;
+    }
+
+    .absent{
+        background-color: #86888a;
+        border-color: #86888a;
+        color: white;
+    }
+}
+
+.alert{
+    
+    font-size:medium;
+    text-align: center;
+}
