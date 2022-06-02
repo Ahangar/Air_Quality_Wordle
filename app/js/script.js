@@ -7,7 +7,7 @@ const chooseWordFromList= () => {
 	$.get('airQualityWords.txt').then(function(data) {
 		solutionList= data.split('\r\n');    //regu expression here
 		solutionWord=solutionList[Math.floor(Math.random()*solutionList.length)];
-		//console.log(solutionWord);
+		console.log(solutionWord);
 	})
 }
 
@@ -200,7 +200,6 @@ const checkWordExists=(word) => {
 
 //Shake 
 const shakTile = (tileNum) => {
-	console.log('shake it!');
 	let tile = document.querySelector('#guess'+currentGuessCount+'Tile'+tileNum);
 	
 	tile.classList.add('shake-in');
