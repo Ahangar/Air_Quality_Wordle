@@ -5,9 +5,9 @@ let solutionList=[];
 const chooseWordFromList= () => {
 
 	$.get('airQualityWords.txt').then(function(data) {
-		solutionList= data.split('\n');    //regu expression here
+		solutionList= data.split('\n');    
 		solutionWord=solutionList[Math.floor(Math.random()*solutionList.length)];
-		console.log(solutionWord);
+		//console.log(solutionWord);
 	})
 }
 
