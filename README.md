@@ -1,5 +1,5 @@
 <p align="center">
-text
+[text](https://github.com/Ahangar/Air_Quality_Wordle/blob/main/coverImage.JPG?raw=true)
 </p>
 ## Air_Quality_Wordle
 [Wordle](https://www.nytimes.com/games/wordle/) is a web-based word game created and developed by Josh Wardle, and owned and published by The New York Times Company since 2022.
