@@ -1,2 +1,3 @@
 ## Air_Quality_Wordle
-<strong>Wordle</strong> is a web-based word game created and developed by Welsh software engineer Josh Wardle, and owned and published by The New York Times Company since 2022.
+[Wordle](https://www.nytimes.com/games/wordle/) is a web-based word game created and developed by Josh Wardle, and owned and published by The New York Times Company since 2022.
+This is a recreation of this game with the solution based on words used in the air quality. You can play this game [here](https://air-quality-wordle.pages.dev/).
